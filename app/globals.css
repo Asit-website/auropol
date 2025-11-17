@@ -1221,7 +1221,7 @@ body {
 
 @media (max-width: 768px) {
   .about-image-container {
-    min-height: 350px;
+    min-height: 480px;
   }
 
   .about-overlay {

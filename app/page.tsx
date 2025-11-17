@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState, useEffect } from 'react';
+import Link from 'next/link';
 import Header from './components/Header';
 import Footer from './components/Footer';
 export default function Home() {
@@ -113,14 +114,14 @@ export default function Home() {
             </p>
             
             <div className="hero-buttons">
-              <a href="#" className="btn-primary">
+              <Link href="/enquiry" className="btn-primary">
                 Enquire Now
                 <span className="btn-arrow">→</span>
-              </a>
-              <a href="#" className="btn-secondary">
+              </Link>
+              <Link href="/products" className="btn-secondary">
                 View Products
                 <span className="btn-arrow">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -140,10 +141,10 @@ export default function Home() {
                 by remaining alert to customer's changing needs and responding 
                 with speed, skill and assurance.
               </p>
-              <a href="#" className="btn-know-more">
+              <Link href="/about" className="btn-know-more">
                 Know More
                 <span>→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -178,12 +179,12 @@ export default function Home() {
               <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="ZED Certification" />
             </div>
 
-            <a href="#" className="btn-read-more">
+            <Link href="/quality-policy" className="btn-read-more">
               Read More About Our Quality Standards
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
               </svg>
-            </a>
+            </Link>
           </div>
 
           {/* Right Side - Image */}
@@ -221,12 +222,12 @@ export default function Home() {
                 bonding agents, peroxide co-agents, flame retardants, antitack agents, tackifiers, and processing 
                 aids designed to deliver durability, adhesion, and efficiency
               </p>
-              <a href="#" className="btn-explore">
+              <Link href="/products" className="btn-explore">
                 Explore Full Product Range
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#7FFFDD"/>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -247,12 +248,12 @@ export default function Home() {
                 to impact modifiers and flame retardants, Auropol's solutions support manufacturers in 
                 achieving optimal performance and regulatory compliance.
               </p>
-              <a href="#" className="btn-explore">
+              <Link href="/products" className="btn-explore">
                 Explore Full Product Range
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#7FFFDD"/>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -274,19 +275,19 @@ export default function Home() {
           </p>
           
           <div className="brochure-buttons">
-            <a href="#" className="btn-request">
+            <Link href="/enquiry" className="btn-request">
               Request Brochure
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
               </svg>
-            </a>
+            </Link>
             
-            <a href="#" className="btn-brochure-link">
+            <Link href="/products" className="btn-brochure-link">
               Read More
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
               </svg>
-            </a>
+            </Link>
           </div>
           
           <div className="brochure-divider"></div>
@@ -495,12 +496,12 @@ export default function Home() {
               We are dedicated to supply specialty products through our wide spread network. For queries regarding our products please contact us.
             </p>
             
-            <a href="#" className="btn-enquire">
+            <Link href="/enquiry" className="btn-enquire">
               Enquire Now
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#105B4E"/>
               </svg>
-            </a>
+            </Link>
           </div>
 
           {/* Right Side - Images */}
