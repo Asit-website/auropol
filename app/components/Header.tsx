@@ -33,8 +33,8 @@ export default function Header() {
               </svg>
             </Link>
             <div className="dropdown-menu">
-              <Link href="/products" className="dropdown-item">Specialty Rubber Chemicals</Link>
-              <Link href="/products/plastic-additives" className="dropdown-item">Plastic Additives</Link>
+              <Link href="/products?category=rubber" className="dropdown-item">Specialty Rubber Chemicals</Link>
+              <Link href="/products?category=plastic" className="dropdown-item">Plastic Additives</Link>
             </div>
           </div>
           <Link href="/rd-technology" className="nav-link">R & D Technology</Link>
@@ -71,8 +71,8 @@ export default function Header() {
             <div className="mobile-nav-item">
               <span className="mobile-nav-link">Products</span>
               <div className="mobile-dropdown">
-                <Link href="/products" className="mobile-dropdown-item" onClick={closeMenu}>Specialty Rubber Chemicals</Link>
-                <Link href="/products/plastic-additives" className="mobile-dropdown-item" onClick={closeMenu}>Plastic Additives</Link>
+                <Link href="/products?category=rubber" className="mobile-dropdown-item" onClick={closeMenu}>Specialty Rubber Chemicals</Link>
+                <Link href="/products?category=plastic" className="mobile-dropdown-item" onClick={closeMenu}>Plastic Additives</Link>
               </div>
             </div>
             <Link href="/rd-technology" className="mobile-nav-link" onClick={closeMenu}>R & D Technology</Link>

@@ -2308,6 +2308,7 @@ body {
   font-family: 'IBM Plex Mono', sans-serif !important;
   border-radius: 5px;
   font-weight: 700;
+  text-decoration: none;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -2391,6 +2392,16 @@ body {
   line-height: 24px;
   transition: color 0.3s ease;
   font-family: 'IBM Plex Mono', sans-serif !important;
+}
+
+.footer-contact li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.footer-contact li a:hover {
+  color: #7FFFDD;
 }
 
 .footer-contact svg {
@@ -2941,6 +2952,92 @@ body {
   font-size: 20px;
 }
 
+/* Advantage Groups for Two-Component Product */
+.product-advantage-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.advantage-group {
+  padding-bottom: 30px;
+}
+
+.advantage-group:not(:last-child) {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.advantage-group-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #105B4E;
+  margin-bottom: 16px;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.advantage-group-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.advantage-group-items li {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+/* Product List with Arrows for Antisticking Agent */
+.product-list-arrows {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-list-arrows li {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  padding-left: 32px;
+  position: relative;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.product-list-arrows li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #105B4E;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Product Groups Container for Flame Retardants */
+.product-groups-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.product-group-section {
+  margin-bottom: 0;
+}
+
+/* Product Variants Container for Dispersing & Processing Additives */
+.product-variants-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 0;
+}
+
 /* Two Column Section Layout */
 .product-two-column-section {
   display: grid;
@@ -2956,7 +3053,7 @@ body {
   /* padding-bottom: 0; */
   border-bottom: none;
   box-shadow: 0px 0px 10px 0px #00000040;
-  border: 1px solid #EFEFEF;
+  /* border: 1px solid #EFEFEF; */
 }
 
 /* Brochure Download */
@@ -3089,7 +3186,9 @@ body {
   font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'IBM Plex Mono', sans-serif;
+  text-decoration: none;
 }
 
 .btn-query:hover {
@@ -3204,9 +3303,11 @@ body {
   font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'IBM Plex Mono',sans-serif;
   width: 100%;
   justify-content: center;
+  text-decoration: none;
 }
 
 .btn-sidebar-query:hover {
@@ -4338,7 +4439,9 @@ body {
     padding: 0 20px;
     min-height: 180px;
   }
-
+  .product-detail-right{
+    padding: 0px !important;
+  }
   .contact-hero-title {
     font-size: 24px;
   }
@@ -4462,6 +4565,7 @@ body {
   background: none !important;
   background-image: none !important;
   padding: 0;
+  gap: 0px !important;
 }
 
 .enquiry-page .enquiry-subtitle {
@@ -4478,7 +4582,7 @@ body {
   font-weight: 700;
   color: #333;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   position: relative;
 }
 
@@ -4693,7 +4797,7 @@ body {
 
   .enquiry-page .enquiry-title {
     font-size: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .enquiry-page .enquiry-title::before,

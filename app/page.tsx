@@ -222,7 +222,7 @@ export default function Home() {
                 bonding agents, peroxide co-agents, flame retardants, antitack agents, tackifiers, and processing 
                 aids designed to deliver durability, adhesion, and efficiency
               </p>
-              <Link href="/products" className="btn-explore">
+              <Link href="/products?category=rubber" className="btn-explore">
                 Explore Full Product Range
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#7FFFDD"/>
@@ -248,7 +248,7 @@ export default function Home() {
                 to impact modifiers and flame retardants, Auropol's solutions support manufacturers in 
                 achieving optimal performance and regulatory compliance.
               </p>
-              <Link href="/products" className="btn-explore">
+              <Link href="/products?category=plastic" className="btn-explore">
                 Explore Full Product Range
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#7FFFDD"/>
@@ -282,7 +282,7 @@ export default function Home() {
               </svg>
             </Link>
             
-            <Link href="/products" className="btn-brochure-link">
+            <Link href="/products?category=rubber" className="btn-brochure-link">
               Read More
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.29425e-05 7.91412L11.5861 7.91412L7.08606 12.4141L8.50006 13.8281L15.4141 6.91412L8.50006 0.000125885L7.08606 1.41413L11.5861 5.91412L6.29425e-05 5.91412V7.91412Z" fill="#203C56"/>
