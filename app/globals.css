@@ -4274,111 +4274,197 @@ body {
 }
 
 .contact-content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 80px 20px;
+  padding: 80px 40px;
 }
 
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact-grid {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 40px;
+  align-items: start;
 }
 
-.contact-subtitle {
-  font-size: 20px;
+/* Left Card - Contact Info */
+.contact-info-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fffe 100%);
+  border-radius: 24px;
+  padding: 50px 40px;
+  box-shadow: 0 10px 40px rgba(20, 115, 104, 0.08);
+  border: 1px solid rgba(20, 115, 104, 0.1);
+  height: 100%;
+}
+
+.contact-card-subtitle {
+  font-size: 16px;
   font-weight: 600;
   color: #147368;
-  text-align: center;
-  margin-bottom: 16px;
   letter-spacing: 2px;
+  margin-bottom: 12px;
+  font-family: 'IBM Plex Mono', sans-serif;
 }
 
-.contact-title {
-  font-size: 42px;
+.contact-card-title {
+  font-size: 32px;
   font-weight: 700;
-  color: #333;
-  text-align: center;
-  margin-bottom: 50px;
-  position: relative;
+  color: #000000;
+  margin-bottom: 40px;
+  line-height: 1.3;
+  font-family: 'IBM Plex Mono', sans-serif;
 }
 
-.contact-title::before,
-.contact-title::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: 100px;
-  height: 2px;
-  background-color: #CCCCCC;
-}
-
-.contact-title::before {
-  right: calc(100% + 30px);
-}
-
-.contact-title::after {
-  left: calc(100% + 30px);
-}
-
-.contact-info {
+.contact-info-items {
   display: flex;
   flex-direction: column;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.contact-info-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  min-width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #e8f5f3 0%, #d4f0ec 100%);
+  border-radius: 12px;
+  display: flex;
   align-items: center;
-  gap: 16px;
-  margin-bottom: 80px;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
 }
 
-.contact-address {
+.contact-info-item:hover .contact-icon {
+  background: linear-gradient(135deg, #147368 0%, #105b4e 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(20, 115, 104, 0.3);
+}
+
+.contact-info-item:hover .contact-icon svg path {
+  fill: #ffffff;
+}
+
+.contact-info-text h3 {
   font-size: 18px;
-  line-height: 1.8;
-  color: #000000;
-  text-align: center;
-  margin: 0;
-}
-
-.contact-detail {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #000000;
-  text-align: center;
-  margin: 0;
-}
-
-.contact-label {
-  color: #147368;
   font-weight: 600;
-}
-
-.contact-detail a {
-  color: #000000;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.contact-detail a:hover {
   color: #147368;
+  margin: 0 0 8px 0;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.contact-info-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333333;
+  margin: 0;
+}
+
+.contact-info-text p a {
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info-text p a:hover {
+  color: #147368;
+  text-decoration: underline;
+}
+
+/* Social Media */
+.contact-social {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid rgba(20, 115, 104, 0.1);
+}
+
+.contact-social h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #147368;
+  margin: 0 0 20px 0;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.contact-social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #e8f5f3 0%, #d4f0ec 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #147368;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: linear-gradient(135deg, #147368 0%, #105b4e 100%);
+  color: #ffffff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(20, 115, 104, 0.3);
+}
+
+/* Right Card - Map */
+.contact-map-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(20, 115, 104, 0.08);
+  border: 1px solid rgba(20, 115, 104, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-map-title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   color: #147368;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin: 0 0 30px 0;
+  font-family: 'IBM Plex Mono', sans-serif;
 }
 
 .contact-map-container {
-  width: 100%;
-  border-radius: 12px;
+  flex: 1;
+  min-height: 500px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .contact-map-container iframe {
   display: block;
   width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-info-card {
+    padding: 40px 30px;
+  }
+
+  .contact-map-card {
+    padding: 30px;
+  }
+
+  .contact-card-title {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4391,35 +4477,42 @@ body {
     font-size: 36px;
   }
 
-  .contact-title {
-    font-size: 32px;
-    margin-bottom: 40px;
+  .contact-content {
+    padding: 60px 30px;
   }
 
-  .contact-title::before,
-  .contact-title::after {
-    width: 60px;
+  .contact-grid {
+    gap: 25px;
   }
 
-  .contact-title::before {
-    right: calc(100% + 20px);
+  .contact-info-card {
+    padding: 35px 25px;
   }
 
-  .contact-title::after {
-    left: calc(100% + 20px);
+  .contact-map-card {
+    padding: 25px;
   }
 
-  .contact-subtitle {
-    font-size: 18px;
+  .contact-card-title {
+    font-size: 26px;
+    margin-bottom: 30px;
   }
 
-  .contact-address,
-  .contact-detail {
-    font-size: 16px;
+  .contact-info-items {
+    gap: 28px;
+  }
+
+  .contact-icon {
+    min-width: 45px;
+    height: 45px;
   }
 
   .contact-map-title {
-    font-size: 28px;
+    font-size: 24px;
+  }
+
+  .contact-map-container {
+    min-height: 400px;
   }
 }
 
@@ -4432,6 +4525,34 @@ body {
   .contact-hero-title {
     font-size: 28px;
   }
+
+  .contact-content {
+    padding: 50px 20px;
+  }
+
+  .contact-info-card {
+    padding: 30px 20px;
+  }
+
+  .contact-map-card {
+    padding: 20px;
+  }
+
+  .contact-card-title {
+    font-size: 24px;
+  }
+
+  .contact-info-text h3 {
+    font-size: 16px;
+  }
+
+  .contact-info-text p {
+    font-size: 15px;
+  }
+
+  .contact-map-container {
+    min-height: 350px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -4439,9 +4560,11 @@ body {
     padding: 0 20px;
     min-height: 180px;
   }
+  
   .product-detail-right{
     padding: 0px !important;
   }
+  
   .contact-hero-title {
     font-size: 24px;
   }
@@ -4450,21 +4573,70 @@ body {
     font-size: 12px;
   }
 
-  .contact-title {
-    font-size: 24px;
+  .contact-content {
+    padding: 40px 15px;
   }
 
-  .contact-subtitle {
-    font-size: 16px;
+  .contact-info-card {
+    padding: 25px 18px;
   }
 
-  .contact-address,
-  .contact-detail {
+  .contact-map-card {
+    padding: 18px;
+  }
+
+  .contact-card-subtitle {
+    font-size: 14px;
+  }
+
+  .contact-card-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .contact-info-items {
+    gap: 24px;
+  }
+
+  .contact-icon {
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .contact-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-info-text h3 {
     font-size: 15px;
   }
 
+  .contact-info-text p {
+    font-size: 14px;
+  }
+
+  .contact-social h3 {
+    font-size: 16px;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
   .contact-map-title {
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .contact-map-container {
+    min-height: 300px;
   }
 }
 
