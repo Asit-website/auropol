@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProductsContent from '../components/ProductsContent';
 
+export const dynamic = 'force-dynamic';
+
 export default function ProductsPage() {
   return (
     <div className="products-page">
