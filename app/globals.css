@@ -1609,7 +1609,7 @@ body {
   }
 
   .specialty-card {
-    min-height: 65vh;
+    min-height: 75vh;
   }
 
   .specialty-card-title {
@@ -4790,7 +4790,9 @@ body {
     padding: 0 40px;
     min-height: 240px;
   }
-
+  .quality-section{
+    margin: 20px 0px !important;
+  }
   .enquiry-page .enquiry-hero-title {
     font-size: 36px;
   }
