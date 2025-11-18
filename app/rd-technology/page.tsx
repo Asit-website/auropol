@@ -22,43 +22,58 @@ export default function RDTechnologyPage() {
 
       {/* Main Content */}
       <section className="rd-technology-content">
-        <div className="rd-technology-container">
-          <h1 className="rd-technology-title">
-            <span className="title-teal">R & D AND</span>
-            <br />
-            <span className="title-black">INNOVATION</span>
-          </h1>
-          
-          <p className="rd-technology-text">
-            AUROPOL's R&D is not just an initiative, it is a norm. Year after year since its incorporation, the 
-            company has emphasized on R&D for new product development & innovations for their valued 
-            customers.The results are tremendous, AUROPOL's R&D team has many advancements and 
-            innovations to its credit.
-          </p>
-
-          <div className="rd-technology-image-container">
-            <img 
-              src="https://res.cloudinary.com/dgif730br/image/upload/v1763191434/image_370_lyuvme.svg" 
-              alt="Auropol Building" 
-              className="rd-technology-image"
-            />
+        <div className="rd-technology-grid">
+          {/* Left Side - R&D Innovation */}
+          <div className="rd-innovation-card">
+            <h1 className="rd-main-title">
+              <span className="title-teal">R & D AND</span>
+              <br />
+              <span className="title-black">INNOVATION</span>
+            </h1>
+            
+            <p className="rd-simple-text">
+              AUROPOL's R&D is not just an initiative, it is a norm. Year after year since its incorporation, 
+              the company has emphasized on R&D for new product development & innovations for their valued 
+              customers.The results are tremendous, AUROPOL's R&D team has many advancements and 
+              innovations to its credit.
+            </p>
           </div>
 
-          <h2 className="rd-technology-section-title">
-            <span className="title-teal">TECHNOLOGY</span>
-            <br />
-            <span className="title-black">LICENSING</span>
-          </h2>
-          
-          <p className="rd-technology-section-text">
-            We have many technologies that are available for licensing.
-          </p>
+          {/* Right Side - Technology Licensing */}
+          <div className="rd-licensing-card">
+            <div className="rd-image-wrapper">
+              <img 
+                src="https://res.cloudinary.com/dgif730br/image/upload/v1763191434/image_370_lyuvme.svg" 
+                alt="Auropol R&D Facility" 
+                className="rd-main-image"
+              />
+            </div>
 
-          {/* Certifications */}
-          <div className="rd-technology-certifications">
-            <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_328_cmfdmq.png" alt="ISO Certification" />
-            <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Certification 2" />
-            <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Certification 3" />
+            <div className="rd-licensing-section">
+              <h2 className="rd-licensing-title">
+                <span className="title-teal">TECHNOLOGY</span>
+                <br />
+                <span className="title-black">LICENSING</span>
+              </h2>
+              
+              <p className="rd-licensing-text">
+                We have many technologies that are available for licensing.
+              </p>
+
+              <div className="rd-certifications-section">
+                <div className="rd-certifications-grid">
+                  <div className="certification-card">
+                    <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_328_cmfdmq.png" alt="ISO Certification" />
+                  </div>
+                  <div className="certification-card">
+                    <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Quality Certification" />
+                  </div>
+                  <div className="certification-card">
+                    <img src="https://res.cloudinary.com/dgif730br/image/upload/v1763189820/image_329_cxr9t1.png" alt="Industry Certification" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
