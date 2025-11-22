@@ -32,10 +32,11 @@ export default function RDTechnologyPage() {
             </h1>
             
             <p className="rd-simple-text">
-              AUROPOL's R&D is not just an initiative, it is a norm. Year after year since its incorporation, 
+              {/* AUROPOL's R&D is not just an initiative, it is a norm. Year after year since its incorporation, 
               the company has emphasized on R&D for new product development & innovations for their valued 
               customers.The results are tremendous, AUROPOL's R&D team has many advancements and 
-              innovations to its credit.
+              innovations to its credit. */}
+              Auropol has been catering to the needs of the industry for more than 25 years and with its rich experience and qualified technical team , Auropol leverages its in-house R&D to develop innovative, safer, and more efficient specialty chemicals for the rubber and plastics industries. Its focus on sustainable formulations, process optimization, and customer collaboration sets it apart.
             </p>
           </div>
 

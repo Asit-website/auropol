@@ -38,7 +38,9 @@ export default function Header() {
             </div>
           </div>
           <Link href="/rd-technology" className="nav-link">R & D Technology</Link>
-          <Link href="/quality-policy" className="nav-link">Quality Policy</Link>
+
+          {/* <Link href="/quality-policy" className="nav-link">Quality Policy</Link> */}
+
           <Link href="/careers" className="nav-link">Careers</Link>
           <Link href="/contact" className="nav-link">Contact Us</Link>
         </nav>
@@ -76,7 +78,7 @@ export default function Header() {
               </div>
             </div>
             <Link href="/rd-technology" className="mobile-nav-link" onClick={closeMenu}>R & D Technology</Link>
-            <Link href="/quality-policy" className="mobile-nav-link" onClick={closeMenu}>Quality Policy</Link>
+            {/* <Link href="/quality-policy" className="mobile-nav-link" onClick={closeMenu}>Quality Policy</Link> */}
             <Link href="/careers" className="mobile-nav-link" onClick={closeMenu}>Careers</Link>
             <Link href="/contact" className="mobile-nav-link" onClick={closeMenu}>Contact Us</Link>
             <Link href="/enquiry" className="mobile-nav-link mobile-enquire-btn" onClick={closeMenu}>

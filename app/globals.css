@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Roboto", sans-serif !important;
+  /* font-family: "IBM Plex Mono", monospace; */
 }
 
 body {
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif !important;
   /* font-family: 'Inter', sans-serif; */
 }
 
@@ -76,12 +78,12 @@ body {
   text-decoration: none;
   color: #203C56;
   font-size: 0.95rem;
-  font-weight: 400;
+  font-weight: 500;
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .nav-link:hover {
@@ -126,9 +128,10 @@ body {
   color: #203C56;
   text-decoration: none;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   transition: all 0.3s ease;
   border-left: 3px solid transparent;
+  font-weight: 500;
 }
 
 .dropdown-item:hover {
@@ -380,7 +383,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .hero-tagline::before {
@@ -394,7 +397,7 @@ body {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 2rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .hero-description {
@@ -403,7 +406,7 @@ body {
   margin-bottom: 3rem;
   color: #FFFFFF;
   font-weight: 400;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .hero-description strong {
@@ -420,7 +423,7 @@ body {
 .btn-primary {
   background: #7FFFDD;
   color: #203C56;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   padding: 12px 40px;
   border-radius: 5px;
   text-decoration: none;
@@ -445,7 +448,7 @@ body {
   color: white;
   /* padding: 1rem 2.5rem; */
   padding: 12px 40px;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 700;
@@ -1134,7 +1137,7 @@ body {
   font-size: 18px;
   line-height: 1.8;
   margin-bottom: 2rem;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
 }
 
@@ -1148,7 +1151,7 @@ body {
   border: 2px solid #7FFFDD;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   font-weight: 700;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -1180,7 +1183,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .about-panel-tagline::before {
@@ -1193,7 +1196,7 @@ body {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.3;
-  /* font-family: 'IBM Plex Mono', sans-serif !important; */
+  /*  font-family: "Roboto", sans-serif !important; */
 }
 
 /* Responsive for About Section */
@@ -1278,7 +1281,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   color: #000000;
 }
 
@@ -1292,7 +1295,7 @@ body {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.3;
-  /* font-family: 'IBM Plex Mono', sans-serif !important; */
+  /*  font-family: "Roboto", sans-serif !important; */
   margin-bottom: 1rem;
   color: #000000;
 }
@@ -1304,7 +1307,7 @@ body {
   width: 27.5em;
   color: #1f2937;
   font-weight: 400;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .quality-logos {
@@ -1330,7 +1333,7 @@ body {
   border: 2px solid #203C56;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   font-weight: bold;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -1431,7 +1434,7 @@ body {
   line-height: 1.3;
   margin-bottom: 1.5rem;
   color: #000000;
-  /* font-family: 'IBM Plex Mono', sans-serif !important; */
+  /*  font-family: "Roboto", sans-serif !important; */
 }
 
 .specialty-intro {
@@ -1440,7 +1443,7 @@ body {
   color: #1f2937;
   max-width: 900px;
   margin: 0 auto;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .specialty-cards {
@@ -1485,13 +1488,13 @@ body {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .specialty-card-subtitle {
   font-size: 16px;
   line-height: 1.5;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   opacity: 1;
   transition: opacity 0.4s ease;
 }
@@ -1526,7 +1529,7 @@ body {
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: white;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .specialty-overlay-text {
@@ -1534,7 +1537,7 @@ body {
   line-height: 1.8;
   color: white;
   margin-bottom: 2rem;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .btn-explore {
@@ -1547,7 +1550,7 @@ body {
   border: 2px solid #7FFFDD;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   font-weight: bold;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -1652,7 +1655,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   color: #000000;
 }
 
@@ -1675,7 +1678,7 @@ body {
   line-height: 27px;
   margin-bottom: 2rem;
   color: #1f2937;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   max-width: 500px;
 }
 
@@ -1696,7 +1699,7 @@ body {
   border: 2px solid #203C56;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   font-weight: bold;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -1733,7 +1736,7 @@ body {
   color: #203C56;
   border: none;
   text-decoration: none;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   font-weight: bold;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -1834,7 +1837,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   color: #36BA94;
 }
 
@@ -1860,7 +1863,7 @@ body {
   line-height: 27px;
   margin-bottom: 4rem;
   color: #1f2937;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -1937,13 +1940,13 @@ body {
   font-weight: 700;
   letter-spacing: 1.5px;
   color: #105B4E;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .insights-card-author {
   font-size: 14px;
   color: #203C56;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   text-decoration: underline;
 }
 
@@ -2045,7 +2048,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   color: white;
 }
 
@@ -2068,7 +2071,7 @@ body {
   line-height: 27px;
   margin-bottom: 2rem;
   color: rgba(255, 255, 255, 0.9);
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   max-width: 500px;
 }
 
@@ -2082,7 +2085,7 @@ body {
   border: none;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   font-weight: bold;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -2176,7 +2179,7 @@ body {
   line-height: 27px;
   color: #000000;
   margin-bottom: 24px;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .footer-address {
@@ -2197,7 +2200,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #3D3D3D;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .footer-certifications {
@@ -2274,7 +2277,7 @@ body {
   line-height: 26px;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 20px;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .footer-enquiry-form {
@@ -2289,7 +2292,7 @@ body {
   border-radius: 5px;
   font-size: 16px;
   color: #A5AAB1;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   outline: none;
 }
 
@@ -2305,7 +2308,7 @@ body {
   background: #7FFFDD;
   color: #203C56;
   border: none;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
   border-radius: 5px;
   font-weight: 700;
   text-decoration: none;
@@ -2369,7 +2372,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   transition: color 0.3s ease;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .footer-links a:hover {
@@ -2391,7 +2394,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   transition: color 0.3s ease;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .footer-contact li a {
@@ -2423,7 +2426,7 @@ body {
   margin: 0;
   color: #FFFFFF;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif !important;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .footer-bottom a {
@@ -2465,7 +2468,7 @@ body {
   gap: 12px;
   color: #203C56;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   margin-bottom: 32px;
 }
 
@@ -2474,7 +2477,7 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .breadcrumb a:hover {
@@ -2485,7 +2488,7 @@ body {
   color: #000000;
   font-weight: 400;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .breadcrumb svg {
@@ -2519,7 +2522,7 @@ body {
   color: #4b5563;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 /* Product Grid */
@@ -2805,7 +2808,7 @@ body {
   gap: 12px;
   color: #7FFFDD;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   margin-bottom: 24px;
 }
 
@@ -2814,7 +2817,7 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
 }
 
@@ -2825,7 +2828,7 @@ body {
 .product-detail-breadcrumb span {
   color: white;
   font-weight: 400;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .product-detail-breadcrumb svg {
@@ -2888,7 +2891,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .product-detail-section {
@@ -2922,7 +2925,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .product-advantages {
@@ -2940,7 +2943,7 @@ body {
   color: #000000;
   padding-left: 32px;
   position: relative;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .product-advantages li::before {
@@ -2972,7 +2975,7 @@ body {
   font-weight: 600;
   color: #105B4E;
   margin-bottom: 16px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .advantage-group-items {
@@ -2988,7 +2991,7 @@ body {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 /* Product List with Arrows for Antisticking Agent */
@@ -3007,7 +3010,7 @@ body {
   color: #000000;
   padding-left: 32px;
   position: relative;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .product-list-arrows li::before {
@@ -3169,7 +3172,7 @@ body {
   color: #000000;
   font-weight: 500;
   margin-bottom: 24px;
-  /* font-family: 'IBM Plex Mono', sans-serif; */
+  /*  font-family: "Roboto", sans-serif !important; */
   line-height: 1.6;
 }
 
@@ -3187,7 +3190,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   /* font-family: 'Inter', sans-serif; */
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   text-decoration: none;
 }
 
@@ -3247,7 +3250,7 @@ body {
   color: #1C1C1C;
   text-decoration: none;
   font-size: 16px;
-  /* font-family: 'IBM Plex Mono', sans-serif; */
+  /*  font-family: "Roboto", sans-serif !important; */
   border-radius: 0;
   transition: all 0.3s ease;
 }
@@ -3286,7 +3289,7 @@ body {
   font-size: 14px;
   color: #4b5563;
   margin-bottom: 20px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   line-height: 1.6;
 }
 
@@ -3304,7 +3307,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   /* font-family: 'Inter', sans-serif; */
-  font-family: 'IBM Plex Mono',sans-serif;
+  font-family: "Roboto", sans-serif !important;
   width: 100%;
   justify-content: center;
   text-decoration: none;
@@ -3465,7 +3468,7 @@ body {
   gap: 12px;
   color: #7FFFDD;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   margin-bottom: 24px;
 }
 
@@ -3474,7 +3477,7 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
 }
 
@@ -3485,7 +3488,7 @@ body {
 .careers-breadcrumb span {
   color: white;
   font-weight: 400;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .careers-breadcrumb svg {
@@ -3500,7 +3503,7 @@ body {
   font-weight: 700;
   color: #7FFFDD;
   margin: 0;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .careers-content {
@@ -3532,7 +3535,7 @@ body {
   font-weight: 700;
   color: #000000;
   margin-bottom: 20px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .careers-tagline {
@@ -3541,7 +3544,7 @@ body {
   color: #147368;
   line-height: 1.4;
   margin-bottom: 40px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .careers-description {
@@ -3584,7 +3587,7 @@ body {
   font-weight: 600;
   color: #147368;
   margin: 0 0 12px 0;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .careers-feature-text p {
@@ -3592,7 +3595,7 @@ body {
   line-height: 1.7;
   color: #000000;
   margin: 0;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
 }
 
@@ -3667,7 +3670,7 @@ body {
   font-weight: 700;
   color: #000000;
   margin-bottom: 16px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .careers-openings-text {
@@ -3675,7 +3678,7 @@ body {
   line-height: 1.7;
   color: #000000;
   margin-bottom: 32px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .careers-positions-grid {
@@ -3726,7 +3729,7 @@ body {
   font-weight: 600;
   color: #000000;
   margin: 0 0 8px 0;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .career-position-card p {
@@ -3973,7 +3976,7 @@ body {
   gap: 12px;
   color: #7FFFDD;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   margin-bottom: 24px;
 }
 
@@ -3982,7 +3985,7 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
 }
 
@@ -3993,7 +3996,7 @@ body {
 .rd-technology-breadcrumb span {
   color: white;
   font-weight: 400;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .rd-technology-breadcrumb svg {
@@ -4008,7 +4011,7 @@ body {
   font-weight: 700;
   color: #7FFFDD;
   margin: 0;
-  /* font-family: 'IBM Plex Mono', sans-serif; */
+  /*  font-family: "Roboto", sans-serif !important; */
 }
 
 .rd-technology-content {
@@ -4040,7 +4043,7 @@ body {
   font-weight: 700;
   margin-bottom: 30px;
   line-height: 1.2;
-  /* font-family: 'IBM Plex Mono', sans-serif; */
+  /*  font-family: "Roboto", sans-serif !important; */
 }
 
 .title-teal {
@@ -4056,7 +4059,7 @@ body {
   line-height: 1.6;
   color: #000000;
   margin: 0;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 /* Right Card - Technology Licensing */
@@ -4095,7 +4098,7 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
-  /* font-family: 'IBM Plex Mono', sans-serif; */
+  /*  font-family: "Roboto", sans-serif !important; */
 }
 
 .rd-licensing-text {
@@ -4103,7 +4106,7 @@ body {
   line-height: 1.7;
   color: #000000;
   margin-bottom: 40px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .rd-certifications-section {
@@ -4350,7 +4353,7 @@ body {
   gap: 12px;
   color: #7FFFDD;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   margin-bottom: 24px;
 }
 
@@ -4359,7 +4362,7 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
 }
 
@@ -4370,7 +4373,7 @@ body {
 .about-breadcrumb span {
   color: white;
   font-weight: 400;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .about-breadcrumb svg {
@@ -4443,7 +4446,7 @@ body {
   text-align: center;
   margin-bottom: 24px;
   max-width: 900px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .about-text strong {
@@ -4569,7 +4572,7 @@ body {
   gap: 12px;
   color: #7FFFDD;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   margin-bottom: 24px;
 }
 
@@ -4578,7 +4581,7 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
 }
 
@@ -4589,7 +4592,7 @@ body {
 .contact-breadcrumb span {
   color: white;
   font-weight: 400;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .contact-breadcrumb svg {
@@ -4635,7 +4638,7 @@ body {
   color: #147368;
   letter-spacing: 2px;
   margin-bottom: 12px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .contact-card-title {
@@ -4644,7 +4647,7 @@ body {
   color: #000000;
   margin-bottom: 40px;
   line-height: 1.3;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .contact-info-items {
@@ -4687,7 +4690,7 @@ body {
   font-weight: 600;
   color: #147368;
   margin: 0 0 8px 0;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .contact-info-text p {
@@ -4720,7 +4723,7 @@ body {
   font-weight: 600;
   color: #147368;
   margin: 0 0 20px 0;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .contact-social-icons {
@@ -4765,7 +4768,7 @@ body {
   font-weight: 700;
   color: #147368;
   margin: 0 0 30px 0;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .contact-map-container {
@@ -5003,7 +5006,7 @@ body {
   gap: 12px;
   color: #7FFFDD;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   margin-bottom: 24px;
 }
 
@@ -5012,7 +5015,7 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
 }
 
@@ -5023,7 +5026,7 @@ body {
 .enquiry-breadcrumb span {
   color: white;
   font-weight: 400;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .enquiry-breadcrumb svg {
@@ -5070,7 +5073,7 @@ body {
   color: #147368;
   letter-spacing: 2px;
   margin-bottom: 12px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .enquiry-card-title {
@@ -5079,7 +5082,7 @@ body {
   color: #000000;
   margin-bottom: 24px;
   line-height: 1.3;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .enquiry-info-card .enquiry-description {
@@ -5129,7 +5132,7 @@ body {
   font-weight: 600;
   color: #147368;
   margin: 0 0 6px 0;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .enquiry-contact-item p {
@@ -5163,7 +5166,7 @@ body {
   font-weight: 600;
   color: #147368;
   margin: 0 0 16px 0;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .enquiry-info-box ul {
@@ -5203,7 +5206,7 @@ body {
   font-weight: 700;
   color: #000000;
   margin-bottom: 30px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .enquiry-form {
@@ -5610,7 +5613,7 @@ body {
   gap: 12px;
   color: #7FFFDD;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   margin-bottom: 24px;
 }
 
@@ -5619,7 +5622,7 @@ body {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 14px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
   font-weight: 400;
 }
 
@@ -5630,7 +5633,7 @@ body {
 .quality-policy-breadcrumb span {
   color: white;
   font-weight: 400;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .quality-policy-breadcrumb svg {
@@ -5677,7 +5680,7 @@ body {
   margin-bottom: 24px;
   display: flex;
   gap: 12px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .title-teal {
@@ -5693,7 +5696,7 @@ body {
   line-height: 1.7;
   color: #147368;
   margin-bottom: 30px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .policy-section-subtitle {
@@ -5701,7 +5704,7 @@ body {
   font-weight: 700;
   color: #000;
   margin-bottom: 20px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .policy-list {
@@ -5717,7 +5720,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .policy-list li::before {
@@ -5743,7 +5746,7 @@ body {
   font-weight: 600;
   color: #147368;
   margin-bottom: 20px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .policy-certifications-grid {
@@ -5847,7 +5850,7 @@ body {
   gap: 10px;
   margin: 0;
   flex-wrap: wrap;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .policy-card-intro {
@@ -5855,7 +5858,7 @@ body {
   line-height: 1.7;
   color: #333;
   margin-bottom: 24px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .policy-card-list {
@@ -5871,7 +5874,7 @@ body {
   font-size: 15px;
   line-height: 1.6;
   color: #333;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .policy-card-list li::before {
@@ -5924,7 +5927,7 @@ body {
   line-height: 1.6;
   color: #000;
   margin: 10px 0 10px;
-  font-family: 'IBM Plex Mono', sans-serif;
+   font-family: "Roboto", sans-serif !important;
 }
 
 .highlight-vision {

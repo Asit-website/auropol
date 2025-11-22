@@ -100,7 +100,7 @@ export default function CareersPage() {
                 offer you the opportunity of an exciting career in our Company.
               </p>
 
-              <div className="careers-positions-grid">
+              {/* <div className="careers-positions-grid">
                 <div className="career-position-card">
                   <div className="position-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,7 +162,7 @@ export default function CareersPage() {
                   <h3>Business Operations</h3>
                   <p>Operations Management</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
