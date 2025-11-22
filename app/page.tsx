@@ -6,10 +6,15 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 export default function Home() {
   const sliderRef = useRef<HTMLDivElement>(null);
+  const heroSliderRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
   const [activeSlide, setActiveSlide] = useState(0);
+  const [currentHeroSlide, setCurrentHeroSlide] = useState(0);
+  const [canScrollHeroLeft, setCanScrollHeroLeft] = useState(false);
+  const [canScrollHeroRight, setCanScrollHeroRight] = useState(true);
+  const [isAutoSlidePaused, setIsAutoSlidePaused] = useState(false);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!sliderRef.current) return;
@@ -49,6 +54,84 @@ export default function Home() {
       return () => slider.removeEventListener('scroll', handleScroll);
     }
   }, []);
+
+  const checkHeroScrollability = () => {
+    if (heroSliderRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = heroSliderRef.current;
+      setCanScrollHeroLeft(scrollLeft > 0);
+      setCanScrollHeroRight(scrollLeft < scrollWidth - clientWidth - 10);
+      const slideWidth = clientWidth;
+      const currentSlide = Math.round(scrollLeft / slideWidth);
+      setCurrentHeroSlide(currentSlide);
+    }
+  };
+
+  useEffect(() => {
+    checkHeroScrollability();
+    const slider = heroSliderRef.current;
+    if (slider) {
+      slider.addEventListener('scroll', checkHeroScrollability);
+      window.addEventListener('resize', checkHeroScrollability);
+      return () => {
+        slider.removeEventListener('scroll', checkHeroScrollability);
+        window.removeEventListener('resize', checkHeroScrollability);
+      };
+    }
+  }, []);
+
+  const scrollHeroLeft = () => {
+    if (heroSliderRef.current) {
+      const slideWidth = heroSliderRef.current.clientWidth;
+      heroSliderRef.current.scrollBy({
+        left: -slideWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const scrollHeroRight = () => {
+    if (heroSliderRef.current) {
+      const slideWidth = heroSliderRef.current.clientWidth;
+      heroSliderRef.current.scrollBy({
+        left: slideWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const goToSlide = (slideIndex: number) => {
+    if (heroSliderRef.current) {
+      const slideWidth = heroSliderRef.current.clientWidth;
+      heroSliderRef.current.scrollTo({
+        left: slideIndex * slideWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  // Auto-slide functionality
+  useEffect(() => {
+    if (isAutoSlidePaused) return;
+
+    const autoSlideInterval = setInterval(() => {
+      if (heroSliderRef.current) {
+        const { scrollLeft, clientWidth } = heroSliderRef.current;
+        const slideWidth = clientWidth;
+        const currentSlide = Math.round(scrollLeft / slideWidth);
+        const totalSlides = 3;
+        
+        if (currentSlide < totalSlides - 1) {
+          // Move to next slide
+          goToSlide(currentSlide + 1);
+        } else {
+          // Loop back to first slide
+          goToSlide(0);
+        }
+      }
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(autoSlideInterval);
+  }, [isAutoSlidePaused]);
 
   return (
     <div>
@@ -97,35 +180,142 @@ export default function Home() {
       </header> */}
       <Header/>
 
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-container">
-          <div className="hero-content">
-            <p className="hero-tagline">Speed. Skill. Assurance</p>
-            
-            <h1 className="hero-title">
-              Exceptional Quality, performance & sustainability
-          </h1>
-            
-            <p className="hero-description">
-              We manufacture high-performance chemical solutions tailored for the{' '}
-              <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
-              durability, and compliance.
-            </p>
-            
-            <div className="hero-buttons">
-              <Link href="/enquiry" className="btn-primary">
-                Enquire Now
-                <span className="btn-arrow">→</span>
-              </Link>
-              <Link href="/products" className="btn-secondary">
-                View Products
-                <span className="btn-arrow">→</span>
-              </Link>
-            </div>
+      {/* Hero Slider Section */}
+      <div 
+        className="hero-slider-wrapper"
+        onMouseEnter={() => setIsAutoSlidePaused(true)}
+        onMouseLeave={() => setIsAutoSlidePaused(false)}
+      >
+        <button 
+          className={`hero-slider-nav-btn hero-slider-nav-left ${!canScrollHeroLeft ? 'disabled' : ''}`}
+          onClick={scrollHeroLeft}
+          aria-label="Previous slide"
+        >
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+
+        <div className="hero-slider" ref={heroSliderRef}>
+          <div className="hero-slider-track">
+            {/* Slide 1 */}
+            <section className="hero-section">
+              <div className="hero-container">
+                <div className="hero-content">
+                  <p className="hero-tagline">Speed. Skill. Assurance</p>
+                  
+                  <h1 className="hero-title">
+                    Exceptional Quality, performance & sustainability
+                </h1>
+                  
+                  <p className="hero-description">
+                    We manufacture high-performance chemical solutions tailored for the{' '}
+                    <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
+                    durability, and compliance.
+                  </p>
+                  
+                  <div className="hero-buttons">
+                    <Link href="/enquiry" className="btn-primary">
+                      Enquire Now
+                      <span className="btn-arrow">→</span>
+                    </Link>
+                    <Link href="/products" className="btn-secondary">
+                      View Products
+                      <span className="btn-arrow">→</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Slide 2 */}
+            <section className="hero-section">
+              <div className="hero-container">
+                <div className="hero-content">
+                  <p className="hero-tagline">Speed. Skill. Assurance</p>
+                  
+                  <h1 className="hero-title">
+                    Exceptional Quality, performance & sustainability
+                </h1>
+                  
+                  <p className="hero-description">
+                    We manufacture high-performance chemical solutions tailored for the{' '}
+                    <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
+                    durability, and compliance.
+                  </p>
+                  
+                  <div className="hero-buttons">
+                    <Link href="/enquiry" className="btn-primary">
+                      Enquire Now
+                      <span className="btn-arrow">→</span>
+                    </Link>
+                    <Link href="/products" className="btn-secondary">
+                      View Products
+                      <span className="btn-arrow">→</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Slide 3 */}
+            <section className="hero-section">
+              <div className="hero-container">
+                <div className="hero-content">
+                  <p className="hero-tagline">Speed. Skill. Assurance</p>
+                  
+                  <h1 className="hero-title">
+                    Exceptional Quality, performance & sustainability
+                </h1>
+                  
+                  <p className="hero-description">
+                    We manufacture high-performance chemical solutions tailored for the{' '}
+                    <strong>rubber and plastic industries</strong> — ensuring exceptional adhesion, 
+                    durability, and compliance.
+                  </p>
+                  
+                  <div className="hero-buttons">
+                    <Link href="/enquiry" className="btn-primary">
+                      Enquire Now
+                      <span className="btn-arrow">→</span>
+                    </Link>
+                    <Link href="/products" className="btn-secondary">
+                      View Products
+                      <span className="btn-arrow">→</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-      </section>
+
+        <button 
+          className={`hero-slider-nav-btn hero-slider-nav-right ${!canScrollHeroRight ? 'disabled' : ''}`}
+          onClick={scrollHeroRight}
+          aria-label="Next slide"
+        >
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+
+        {/* Slider Indicators */}
+        <div className="hero-slider-indicators">
+          <div 
+            className={`hero-indicator ${currentHeroSlide === 0 ? 'active' : ''}`}
+            onClick={() => goToSlide(0)}
+          ></div>
+          <div 
+            className={`hero-indicator ${currentHeroSlide === 1 ? 'active' : ''}`}
+            onClick={() => goToSlide(1)}
+          ></div>
+          <div 
+            className={`hero-indicator ${currentHeroSlide === 2 ? 'active' : ''}`}
+            onClick={() => goToSlide(2)}
+          ></div>
+        </div>
+      </div>
 
       {/* About Section with Hover Effect */}
       <section className="about-section">
