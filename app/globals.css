@@ -359,7 +359,9 @@ body {
   background-repeat: no-repeat;
 }
 
-
+.her-sec1{
+  background-image: url('https://res.cloudinary.com/dgif730br/image/upload/v1763964833/WhatsApp_Image_2025-11-24_at_11.25.21_AM_xey9fv.jpg');
+}
 .hero-container {
   max-width: 1400px;
   margin: 0 auto;

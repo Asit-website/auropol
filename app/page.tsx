@@ -229,7 +229,7 @@ export default function Home() {
             </section>
 
             {/* Slide 2 */}
-            <section className="hero-section">
+            <section className="hero-section her-sec1">
               <div className="hero-container">
                 <div className="hero-content">
                   <p className="hero-tagline">Speed. Skill. Assurance</p>
